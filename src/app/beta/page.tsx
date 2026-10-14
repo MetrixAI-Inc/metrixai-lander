@@ -13,21 +13,21 @@ import {
 export const metadata: Metadata = {
   title: "Beta Program",
   description:
-    "Apply to become a MetrixAI founding beta partner. Full platform access, dedicated onboarding support, and direct input into the product roadmap.",
+    "Apply to become a MetrixAI founding beta partner. Access to the Founding Beta platform, dedicated onboarding support, and direct input into the product roadmap.",
 };
 
 const perks = [
   {
     icon: KeyRound,
-    title: "Full Platform Access",
+    title: "Access to the MetrixAI Founding Beta Platform",
     description:
-      "Your entire organization gets access to MetrixAI from day one — the employee view, the manager and HR view, and the executive dashboard. No sandboxed version, no limited features.",
+      "Your organization will have access to the capabilities included in the Founding Beta Program, with experiences designed for employees, managers, HR teams, and executive leaders. You'll work with MetrixAI to evaluate the platform in a real-world environment, provide feedback, and help shape future development. Certain advanced capabilities and integrations may be introduced in later releases.",
   },
   {
     icon: LifeBuoy,
-    title: "Dedicated Onboarding",
+    title: "Dedicated Onboarding and Support",
     description:
-      "We handle the setup. Whether you are connecting via API integration or CSV import, we get your data in and your team oriented quickly so you are seeing real insights within days, not months.",
+      "We'll work with your team to establish the appropriate data onboarding approach, including supported integrations or structured data imports, based on your organization's systems and the capabilities available during the beta. Our goal is to help your team begin evaluating MetrixAI efficiently, with hands-on guidance throughout the program.",
   },
   {
     icon: Route,
@@ -37,11 +37,17 @@ const perks = [
   },
   {
     icon: Tag,
-    title: "Preferred Founding Pricing",
+    title: "Founding Partner Pricing Benefits",
     description:
-      "Beta partners who complete the program lock in founding partner pricing for life when they convert to a paid subscription. Details are shared during your introductory call.",
+      "Founding Beta Partners will receive preferred early-adopter pricing opportunities, with applicable subscription terms and benefits outlined in their individual participation agreements. Details are shared during your introductory call.",
   },
 ];
+
+const scopeNote = {
+  title: "Built for Early Collaboration",
+  description:
+    "The Founding Beta Program provides access to selected MetrixAI capabilities for real-world evaluation and feedback. Features, integrations, and functionality included in the program will be confirmed during onboarding and documented in each partner's participation agreement. Additional capabilities may become available as the platform evolves.",
+};
 
 const asks = [
   "Active use of the platform throughout the program",
@@ -85,10 +91,10 @@ export default function BetaPage() {
               stop paying to replace talent you already have.
             </p>
             <p>
-              As a founding beta partner you will receive full access to the
-              platform, dedicated onboarding support, and direct input into the
-              product roadmap. In exchange we ask for active use of the platform
-              and honest feedback throughout the program.
+              As a founding beta partner you will receive access to the
+              Founding Beta platform, dedicated onboarding support, and direct
+              input into the product roadmap. In exchange we ask for active use
+              of the platform and honest feedback throughout the program.
             </p>
             <p>
               Please take a few minutes to complete the form below. A member of
@@ -147,6 +153,15 @@ export default function BetaPage() {
               </li>
             ))}
           </ul>
+        </div>
+
+        <div className="mx-auto mt-10 max-w-3xl rounded-2xl border border-gray-100 bg-white p-6 shadow-sm sm:p-8">
+          <h3 className="mb-2 text-lg font-bold text-gray-900 sm:text-xl">
+            {scopeNote.title}
+          </h3>
+          <p className="text-sm leading-relaxed text-gray-600 sm:text-base">
+            {scopeNote.description}
+          </p>
         </div>
 
         <div className="mx-auto mt-10 max-w-3xl space-y-4 rounded-2xl border border-amber-200 bg-amber-50 p-6 sm:p-8">
