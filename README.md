@@ -2,7 +2,7 @@
 
 A modern, high-polish marketing website for MetrixAI - an AI-powered Talent Intelligence Platform. Built with Next.js 16, TypeScript, Tailwind CSS v4, and Framer Motion.
 
-## Features
+## Features 
 
 - **Modern Stack**: Next.js 16 with App Router, TypeScript, Tailwind CSS v4
 - **Smooth Animations**: Framer Motion for entrance and scroll-triggered animations
